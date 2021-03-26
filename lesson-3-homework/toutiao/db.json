@@ -1,0 +1,88 @@
+{
+    "news":[
+        {
+            "type":"no-mode",
+            "link":"字观两会|质",
+            "tag":"时政",
+            "tag-color":"",
+            "media":"./img/media1.jpg",
+            "source":"央视新闻网",
+            "recommend":529,
+            "time":"3/25/2021 08:30:00"
+        },
+        {
+            "type":"no-mode",
+            "link":"香港中联办发言人——完善特区选举制度体现香港整体利益 任何外部干预都阻挡不了正义的步伐",
+            "tag":"时政",
+            "tag-color":"",
+            "media":"./img/media2.jpg",
+            "source":"人民日报",
+            "recommend":66,
+            "time":"3/26/2021 08:30:00"
+        },
+        {
+            "type":"no-mode",
+            "link":"福奇：美国疫情中的灾难性死亡应归咎于政治分歧",
+            "tag":"国际",
+            "tag-color":"",
+            "media":"./img/media3.jpg",
+            "source":"新华社",
+            "recommend":888,
+            "time":"3/26/2021 15:30:00"
+        },
+        {
+            "type":"single-mode",
+            "img":"./img/img1.jpg",
+            "link":"长征七号改遥二运载火箭发射成功 搭载发射试验九号卫星",
+            "tag":"军事",
+            "tag-color":"",
+            "media":"./img/media4.jpg",
+            "source":"新华网客户端",
+            "recommend":1104,
+            "time":"3/26/2021 20:30:00"
+        },
+        {
+            "type":"single-mode",
+            "img":"./img/img2.jpg",
+            "link":"“我恋爱了”85岁大爷急电女儿宣布喜事 保姆拿出陪睡记录要房产",
+            "tag":"视频",
+            "tag-color":"red",
+            "media":"./img/media1.jpg",
+            "source":"央视网新闻",
+            "recommend":0,
+            "time":"3/26/2021 23:00:00"
+        },
+        {
+            "type":"no-mode",
+            "link":"李克强这9句话，提气！暖心！",
+            "tag":"时政",
+            "tag-color":"",
+            "media":"./img/media6.jpg",
+            "source":"商务微新闻",
+            "recommend":4,
+            "time":"3/26/2021 23:20:00"
+        },
+        {
+            "type":"single-mode",
+            "img":"./img/img3.jpg",
+            "link":"长时间用眼造成视疲劳？别慌！军医来为你支招！",
+            "tag":"视频",
+            "tag-color":"red",
+            "media":"./img/media4.jpg",
+            "source":"新华网客户端",
+            "recommend":122,
+            "time":"3/26/2021 23:22:00"
+        },
+        {
+            "type":"single-mode",
+            "img":"./img/img4.jpg",
+            "link":"坚持下去，用一个月的时间来改变自己，只要用心，都可以做得到",
+            "tag":"社会",
+            "tag-color":"green",
+            "media":"./img/media5.jpg",
+            "source":"光明网",
+            "recommend":1246,
+            "time":"3/26/2021 23:23:00"
+        }
+    ]
+}
