@@ -1,0 +1,23 @@
+html {
+  position: relative;
+}
+.App {
+  margin: 50px auto;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.App ul {
+  width: 900px;
+  position: relative;
+  left: -300px;
+  touch-action: none;
+}
+.App ul li {
+  display: inline-block;
+  width: 300px;
+}
+.App ul li img {
+  width: 300px;
+}
+/*# sourceMappingURL=./App.css.map */
