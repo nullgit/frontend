@@ -37,7 +37,7 @@ export default class App extends Component {
             this.moveRight(true)
         } else if (distance > 0) {
             this.moveLeft(false)
-        } else {
+        } else if (distance < 0) {
             this.moveRight(false)
         }
         this.setState({timer:setInterval(() => {
