@@ -1,0 +1,21 @@
+.headerWrapper {
+  background-color: #D43D3D;
+  padding: 20rem 50rem;
+}
+.headerWrapper .header {
+  display: flex;
+  justify-content: space-between;
+}
+.headerWrapper .header .message .messageIcon {
+  font-size: 50rem;
+  color: white;
+}
+.headerWrapper .header .headline {
+  font-size: 45rem;
+  color: white;
+}
+.headerWrapper .header .search .searchIcon {
+  font-size: 50rem;
+  color: white;
+}
+/*# sourceMappingURL=./Header.module.css.map */
