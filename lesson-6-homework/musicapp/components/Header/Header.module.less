@@ -1,0 +1,107 @@
+@botton-height: 50px;
+@botton-height-new: 40px;
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: space-between;
+
+    .headerLeft {
+        display: flex;
+        align-items: center;
+        .logo{
+            width: 60px;
+        }
+
+        .appName {
+            font-size: 25px;
+            color: white;
+        }
+    }
+
+    .headerRight {
+        width: 250px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .like {
+            display: flex;
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+            width: 50px;
+            height: @botton-height;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 5px;
+        }
+
+        .signUp,
+        .logIn{
+            height: @botton-height;
+            padding: 0px 20px;
+            border-radius: 5px;
+        }
+
+        .signUp{
+            background-color: green;
+            border-color: green;
+        }
+
+        .logIn {
+            background-color: gray;
+            border-color: gray;
+        }
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .header{
+        height: 50px;
+
+        .headerLeft {
+            .logo{
+                width: 40px;
+            }
+    
+            .appName {
+                font-size: 15px;
+                color: white;
+            }
+        }
+
+        .headerRight {
+            width: 200px;
+
+            .like,
+            .signUp,
+            .logIn{
+                height: @botton-height-new;
+            }
+
+            .signUp,
+            .logIn{
+                padding: 0px 10px;
+            }
+
+            .like{
+                font-size: 15px;
+                width: 40px;
+            }
+        }
+
+    }
+
+}
+
+
+@media (max-width: 375px) {
+    .header{
+        width: 360px;
+    }
+}

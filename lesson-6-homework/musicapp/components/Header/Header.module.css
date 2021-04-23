@@ -1,0 +1,84 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: space-between;
+}
+.header .headerLeft {
+  display: flex;
+  align-items: center;
+}
+.header .headerLeft .logo {
+  width: 60px;
+}
+.header .headerLeft .appName {
+  font-size: 25px;
+  color: white;
+}
+.header .headerRight {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .headerRight .like {
+  display: flex;
+  background-color: gray;
+  color: white;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+.header .headerRight .signUp,
+.header .headerRight .logIn {
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+.header .headerRight .signUp {
+  background-color: green;
+  border-color: green;
+}
+.header .headerRight .logIn {
+  background-color: gray;
+  border-color: gray;
+}
+@media (max-width: 767px) {
+  .header {
+    height: 50px;
+  }
+  .header .headerLeft .logo {
+    width: 40px;
+  }
+  .header .headerLeft .appName {
+    font-size: 15px;
+    color: white;
+  }
+  .header .headerRight {
+    width: 200px;
+  }
+  .header .headerRight .like,
+  .header .headerRight .signUp,
+  .header .headerRight .logIn {
+    height: 40px;
+  }
+  .header .headerRight .signUp,
+  .header .headerRight .logIn {
+    padding: 0px 10px;
+  }
+  .header .headerRight .like {
+    font-size: 15px;
+    width: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .header {
+    width: 360px;
+  }
+}
+/*# sourceMappingURL=./Header.module.css.map */

@@ -1,0 +1,218 @@
+@headerHeight: 65px;
+@headerHeightNew: 50px;
+
+.bodyWrapper {
+    display: flex;
+    flex-direction: column;
+
+
+    .hiddenTop{
+        width: 100%;
+        height: @headerHeight;
+    }
+
+    .appBody{
+        @navWidth:35px;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+
+        .navLeft{
+            position: fixed;
+            display: flex;
+            // display: none;
+            flex-direction: column;
+            justify-content: space-evenly;
+            min-height: calc(100vh - @headerHeight);
+            width: @navWidth;
+            background-color: darken(#fff, 15%);
+    
+            .icon{
+                display: flex;
+                justify-content: center;
+                width: @navWidth;
+                height: 20px;
+                font-size: 20px;
+                color: black;
+            }
+        }
+
+        .hiddenLeft {
+            width: @navWidth;
+            height: calc(100vh - @headerHeight);
+            background-color: red;
+        }
+
+        .bodyBox{
+            width: calc(100vw - @navWidth);
+            background-color: white;
+
+            .musicBox{
+                width: 100%;
+                height: calc(100vh - @headerHeight - 150px);
+                background-color: darken(#808080, 20%);
+                color: white;
+
+                .musicCover{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:flex-start;
+
+                    .imgWrapper{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 200px;
+                        height: 300px;
+                        img{
+                            width: 150px;
+                        }
+                    }
+
+                    .musicInfo{
+                        padding-top: 75px;
+                        .musicName{
+                            font-size: 35px;
+                        }
+                    }
+                }
+                
+                .musicBoxFooter{
+                    margin-left: 200px;
+                    margin-top: 25px;
+                    width: 250px;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+
+            .musicList{
+                li{
+                    display: flex;
+                    justify-content: space-evenly;
+                    font-size: 18px;
+                    height: 50px;
+                    line-height: 50px;
+                    width: 100%;
+
+                    span{
+                        width: 200px;
+                    }
+
+                    .musicName{
+                        // color: white;
+                        padding-left: 10px;
+                    }
+                    
+                    .time{
+                        width: 100px;
+                    }
+
+                    .sync{
+                        font-size: 12px;
+                        height: 50px;
+                        line-height: 50px;
+                        span{
+                            height: 14px;
+                            line-height: 14px;
+                            border: 1px black solid;
+                        }
+                    }
+                }
+
+                li:nth-child(2n) {
+                    background-color: darken(#fff, 5%);
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 900px) {
+    .sync{
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .bodyWrapper{
+        .hiddenTop{
+            height: @headerHeightNew;
+        }
+    
+        .appBody{
+            .hiddenLeft,
+            .navLeft{
+                display: none;
+            }
+
+            .bodyBox{
+                width: 100vw;
+
+                .musicBox{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    .musicCover{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .imgWrapper{
+                            height: 150px;
+                            width: 150px;
+                            img{
+                                width: 120px;
+                            }
+                        }
+
+                        .musicInfo{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-top: 25px;
+                            .musicName{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .musicBoxFooter{
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+
+        .musicList{
+            li {
+                .artist{
+                    display: none;
+                }
+                .musicName,
+                .time{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .bodyWrapper{
+        width: 375px;
+        .appBody{
+            .bodyBox{
+                
+                .musicBox{
+                    width: 375px;
+                }
+                .musicList{
+                    width: 375px;
+                }
+
+            }
+        }
+    }
+}

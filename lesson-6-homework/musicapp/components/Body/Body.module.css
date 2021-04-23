@@ -1,0 +1,168 @@
+.bodyWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.bodyWrapper .hiddenTop {
+  width: 100%;
+  height: 65px;
+}
+.bodyWrapper .appBody {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.bodyWrapper .appBody .navLeft {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: calc(100vh - 65px);
+  width: 35px;
+  background-color: #d9d9d9;
+}
+.bodyWrapper .appBody .navLeft .icon {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  height: 20px;
+  font-size: 20px;
+  color: black;
+}
+.bodyWrapper .appBody .hiddenLeft {
+  width: 35px;
+  height: calc(100vh - 65px);
+  background-color: red;
+}
+.bodyWrapper .appBody .bodyBox {
+  width: calc(100vw - 35px);
+  background-color: white;
+}
+.bodyWrapper .appBody .bodyBox .musicBox {
+  width: 100%;
+  height: calc(100vh - 65px - 150px);
+  background-color: #4d4d4d;
+  color: white;
+}
+.bodyWrapper .appBody .bodyBox .musicBox .musicCover {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bodyWrapper .appBody .bodyBox .musicBox .musicCover .imgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+}
+.bodyWrapper .appBody .bodyBox .musicBox .musicCover .imgWrapper img {
+  width: 150px;
+}
+.bodyWrapper .appBody .bodyBox .musicBox .musicCover .musicInfo {
+  padding-top: 75px;
+}
+.bodyWrapper .appBody .bodyBox .musicBox .musicCover .musicInfo .musicName {
+  font-size: 35px;
+}
+.bodyWrapper .appBody .bodyBox .musicBox .musicBoxFooter {
+  margin-left: 200px;
+  margin-top: 25px;
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bodyWrapper .appBody .bodyBox .musicList li {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+}
+.bodyWrapper .appBody .bodyBox .musicList li span {
+  width: 200px;
+}
+.bodyWrapper .appBody .bodyBox .musicList li .musicName {
+  padding-left: 10px;
+}
+.bodyWrapper .appBody .bodyBox .musicList li .time {
+  width: 100px;
+}
+.bodyWrapper .appBody .bodyBox .musicList li .sync {
+  font-size: 12px;
+  height: 50px;
+  line-height: 50px;
+}
+.bodyWrapper .appBody .bodyBox .musicList li .sync span {
+  height: 14px;
+  line-height: 14px;
+  border: 1px black solid;
+}
+.bodyWrapper .appBody .bodyBox .musicList li:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+@media (max-width: 900px) {
+  .sync {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .bodyWrapper .hiddenTop {
+    height: 50px;
+  }
+  .bodyWrapper .appBody .hiddenLeft,
+  .bodyWrapper .appBody .navLeft {
+    display: none;
+  }
+  .bodyWrapper .appBody .bodyBox {
+    width: 100vw;
+  }
+  .bodyWrapper .appBody .bodyBox .musicBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bodyWrapper .appBody .bodyBox .musicBox .musicCover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bodyWrapper .appBody .bodyBox .musicBox .musicCover .imgWrapper {
+    height: 150px;
+    width: 150px;
+  }
+  .bodyWrapper .appBody .bodyBox .musicBox .musicCover .imgWrapper img {
+    width: 120px;
+  }
+  .bodyWrapper .appBody .bodyBox .musicBox .musicCover .musicInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+  }
+  .bodyWrapper .appBody .bodyBox .musicBox .musicCover .musicInfo .musicName {
+    font-size: 18px;
+  }
+  .bodyWrapper .appBody .bodyBox .musicBox .musicBoxFooter {
+    margin-left: 0px;
+  }
+  .bodyWrapper .musicList li .artist {
+    display: none;
+  }
+  .bodyWrapper .musicList li .musicName,
+  .bodyWrapper .musicList li .time {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .bodyWrapper {
+    width: 375px;
+  }
+  .bodyWrapper .appBody .bodyBox .musicBox {
+    width: 375px;
+  }
+  .bodyWrapper .appBody .bodyBox .musicList {
+    width: 375px;
+  }
+}
+/*# sourceMappingURL=./Body.module.css.map */
