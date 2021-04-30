@@ -12,9 +12,9 @@ server.on("request", function (req, res) {
     } else {
         url = "." + req.url;
     }
-    // res.setHeader("Cache-Control", "max-age=-1");
+    res.setHeader("Cache-Control", "max-age=100000");
     // res.setHeader("Cache-Control", "no-cache");
-    res.setHeader("Cache-Control", "no-store");
+    // res.setHeader("Cache-Control", "no-store");
     fs.readFile(url, function (err, data) {
         if (err) {
             throw err;
